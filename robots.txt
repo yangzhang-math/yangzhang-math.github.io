@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://yangzhang-math.github.io/al-folio/sitemap.xml
+Sitemap: https://yangzhang-math.github.io/sitemap.xml
