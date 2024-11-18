@@ -1,0 +1,140 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    /* font-weight: bold; */
+}
+
+/* Two-column Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/* Two-column Container */
+.container_research {
+    justify-content: space-between;
+    line-height: 1.38;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.research_pub_list {
+    margin-left: 30px;
+}
+
+/* Left Column Styling */
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Right Column Styling */
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    /* Stack columns vertically on narrow screens */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
+}
